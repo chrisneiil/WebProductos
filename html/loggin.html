@@ -2,83 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Loggin App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/standardWeb.css" media="screen" />
+  <title>loggin</title>
+  <style>
+    .sing-up{
+      margin-top: 1rem;
+      padding-bottom: 12px;
+      padding-top: 12px;
+      background-color: darkgrey;
+      color: white;
+      border-radius: 10px;
+      border: none;
+    }
+    @media (max-width: 800px) {
+      body{
+        background-color: rgba(226, 229, 232, 0.94);
+        margin: 0px;
+      }
+      .form{
+        display: grid;
+        width: 90%;
+        box-shadow: none;
+      }
+      .sing-up{
+        background-color: #b1b6b9;
+        margin-top: 10rem;
+      }
+    }
 
+  </style>
 </head>
 <body>
-  <div class="card">
-    <img class="logo" src="../img/pngwing.com.png">
-    <div>
-      <h1 class="titulo" style="text-align: center">Create a new password</h1>
-      <p class="subtitulo" style="text-align: center">Enter a new password for your account</p>
-
-      <form action="/" class="form">
-          <label for="password"
-                 class="label"
-          >Password</label>
-          <input for="password"
-                 id="password"
-                 placeholder="********"
-                 class="input input-password"
-          >
-          <label for="new-password"
-                 class="label"
-          >Password</label>
-          <input for="new-password"
-                 id="new-password"
-                 placeholder="********"
-                 class="input input-password"
-          >
-        <input
-        type="submit"
-        value="Confirm"
-        class="success"
+    <form  action="/" class="form">
+      <img class="logo" src="../img/pngwing.com.png">
+      <label>
+        E-mail
+      </label>
+      <input
+        class="input"
+        style="margin-bottom: 1rem"
+        for="email"
+        id="email"
+        placeholder="Ingrese su e-mail"
       >
-      </form>
-    </div>
-  </div>
-
+      <label>Password</label>
+      <input
+        class="input"
+        for="password"
+        id="password"
+        placeholder="Ingrese su contraseña"
+        style="margin-bottom: 1rem"
+      >
+      <input type="submit"
+             value="Log in"
+             class="success"
+      >
+      <a href="/">Forgot my password.</a>
+      <input type="submit"
+             value="Sing up"
+             class="sing-up"
+      >
+    </form>
 </body>
-<style>
-  body{
-    margin: 0px;
-    background-color: #b3d4fc;
-  }
-  @media (max-height: 800px) {
-    .logo{
-      display: block;
-      height: 50%;
-    }
-  }
-  .success{
-    cursor: pointer;
-    margin-top: 10px;
-    font-style: italic;
-    background-color: #4e8f10;
-    color: white;
-    padding: 6px;
-    border: none;
-    border-radius: 10px;
-  }
-  .input{
-    margin-bottom: 10px;
-    background-color: aliceblue;
-    border: none;
-    height: 30px;
-    font-size: 15px;
-    padding: 4px;
-  }
-  .logo{
-    width: 100%;
-    justify-self: center;
-  }
-  .form{
-    display: grid;
-    width: 100%;
-  }
-  .card{
-    display: grid;
-    place-content: center;
-  }
-</style>
 </html>
