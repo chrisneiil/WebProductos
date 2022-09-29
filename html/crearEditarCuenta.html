@@ -4,39 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/standardWeb.css" media="screen" />
-  <title></title>
+  <title>Create account</title>
 </head>
 <body>
-  <form class="form">
-    <h1 style="text-align: center">My account</h1>
-      <labe>
-        Name
-      </labe>
-      <input
-             for="name"
-             class="input"
-      >
-      <labe>
-        Email address
-      </labe>
-      <input
-             for="email"
-             class="input"
-      >
-      <labe>
-        Password
-      </labe>
-      <input
-             for="password"
-             class="input"
-      >
-
-    <input
+  <div>
+    <form action="/" class="form">
+      <h1 style="text-align: center">My account</h1>
+        <labe>
+          Name
+        </labe>
+        <input
+               for="name"
+               class="input"
+        >
+        <labe>
+          Email address
+        </labe>
+        <input
+               for="email"
+               class="input"
+        >
+        <labe>
+          Password
+        </labe>
+        <input
+               for="password"
+               class="input"
+        > <input
       type="submit"
       class="success"
-      value="Save"
+      value="Create"
     >
-  </form>
+    </form>
+
+  </div>
 </body>
 <style>
   @media (max-width: 800px) {
@@ -47,8 +48,19 @@
     .form{
       display: grid;
       width: 90%;
+      margin: auto;
+      padding: 0;
       box-shadow: none;
     }
+    .success{
+      background-color: rgba(226, 229, 232, 0.94);
+      color: grey;
+      border:  grey solid;
+      position: absolute;
+      bottom: 0;
+      width: 90%;
+    }
+    .
   }
 </style>
 </html>
